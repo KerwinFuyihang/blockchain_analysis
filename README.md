@@ -1,4 +1,4 @@
-# blockchain_analysis
+# Blockchain Trillema: Quantification for Algorand & Beacon Chain
 For blockchain data analysis
 
 The overleaf project is:

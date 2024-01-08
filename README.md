@@ -9,10 +9,10 @@ This project aims to provide a comprehensive analysis of blockchain technologies
 - Data-driven insights into blockchain technologies
 
 ## Installation
-Instructions on how to install and run the project.
+Run the .ipynb file to acquire python libraries.
 
 ## Usage
-Guidelines on how to use the project, including any necessary commands or scripts.
+Run the .ipynb file.
 
 ## Contributing
 Information on how others can contribute to the project.

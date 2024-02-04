@@ -59,7 +59,11 @@ $$ N = min\{k \in [1,...,K] : \sum_{i=1}^K P_i > 0.51\}$$
 ### Herfindahl Hirschman Index
 $$HHI = \sum_{i=1}^N P_i^2$$
 ## Usage
-Guidelines on how to use the project, including any necessary commands or scripts.
+To execute the Jupyter Notebook and perform the analysis:
+1. Navigate to the directory where you cloned the repository.
+2. Start the Jupyter Notebook server by running `jupyter notebook` in your command line.
+3. Open the `experiment.ipynb` file from the Jupyter Notebook interface in your browser.
+4. Execute the notebook cells in sequence to conduct the analysis.
 
 ## Contributing
 We welcome contributions from the community. If you wish to contribute to the project, please follow these guidelines:
@@ -68,8 +72,8 @@ We welcome contributions from the community. If you wish to contribute to the pr
 - Submit a pull request with a clear description of your improvements or bug fixes.
 
 ## License
-This project is licensed under []. For more details, see the LICENSE file in the repository.
+This project is licensed under [MIT License]. For more details, see the LICENSE file in the repository.
 
 ## Contact
-Information for contacting the project maintainers for further queries or collaborations.
+For any inquiries or potential collaborations, please reach out to the project maintainers at [luyao.zhang@dukekunshan.edu.cn]. We are open to feedback and interested in hearing about how you may want to use or improve the project.
 

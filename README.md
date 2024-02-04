@@ -22,42 +22,53 @@ For the consensus layer, we use proposer/validator data to represent the staking
 |------------------|----------------------------------------------------------------------------------------------------------------|
 | `date`           | The specific date for which the data is recorded, formatted as "YYYY-MM-DD".                                   |
 | `proposer_count` | The number of proposers that participated in the block proposal process on the given date.        |
-| `reward`         | The reward given to the proposers or validators on that date, possibly denoted in the native cryptocurrency.   |
+| `reward`         | The Reward for block proposal per day.   |
+
 
 #### Validator data (Beacon)
-Placeholder here.
+| Column Name      | Discription                                                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------|
+| `date`           | The specific date for which the data is recorded, formatted as "YYYY-MM-DD".                                   |
+| `Value` | Average account balance of validators per day.      |
 
 For the transaction layer, we use the number of daily transaction data to quantify the decentralization.
 #### Beacon transaction data
 | Column Name | Discription                                                                                     |
 |-------------|-------------------------------------------------------------------------------------------------------|
 | `Timestamp` | The timestamp when the transactions were recorded             |
-| `Value`     | The total number of transactions processed on the Algorand for the corresponding timestamp.    |
+| `daily_transaction`     | The daily transaction on Beacon (USD).    |
 
 #### Algorand transaction data
-placehoder here.
-
-
-
-
+| Column Name | Discription                                                                                     |
+|-------------|-------------------------------------------------------------------------------------------------------|
+| `time` | The timestamp when the transactions were recorded             |
+| `count`     | Transaction count per day.    |
+| `fees`     | Tokens used for transaction.    |
 
 ## Methodologies to quantify on-chain decentralization
 ### Shannon Entropy
+A higher value indicates more chaos in authority distribution while a lower value refers to a more centralized system. We define the indice $H(v)$ as:
+$$H(v) = \prod \limits_{i=1}^N P(v_i)^{-P(v_i)}$$
+where the $v_i$ refers to the unit data for each layer and the $P(v_i)$ refers to the weight of the unit data in respect to the overall dataset:
+$$P(v_i) = \frac{v_i}{\sum_{i=1}^N v_i}$$
 
 ### Gini Coefficient
-
+$$G = 1 - \sum_{i=1}^N P_i^2$$
 ### Nakaoto Coefficient
-
+$$ N = min\{k \in [1,...,K] : \sum_{i=1}^K P_i > 0.51\}$$
 ### Herfindahl Hirschman Index
-
+$$HHI = \sum_{i=1}^N P_i^2$$
 ## Usage
 Guidelines on how to use the project, including any necessary commands or scripts.
 
 ## Contributing
-Information on how others can contribute to the project.
+We welcome contributions from the community. If you wish to contribute to the project, please follow these guidelines:
+- Fork the repository and create a feature branch.
+- Make your changes and ensure that your code adheres to the existing style.
+- Submit a pull request with a clear description of your improvements or bug fixes.
 
 ## License
-Details about the project's licensing.
+This project is licensed under []. For more details, see the LICENSE file in the repository.
 
 ## Contact
 Information for contacting the project maintainers for further queries or collaborations.

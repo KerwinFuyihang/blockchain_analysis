@@ -1,4 +1,4 @@
-# Blockchain Analysis Project
+# Quantifying the Blockchain Trilemma: A Comparative Study of Algorand and Ethereum 2.0
 
 ## Overview
 This project aims to provide a comprehensive analysis of blockchain technologies, focusing on their efficiency, security, and decentralization aspects. It includes comparative studies of systems like Algorand and Beaconchain, offering insights into the blockchain trilemma.
